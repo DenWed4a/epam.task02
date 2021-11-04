@@ -10,23 +10,17 @@
 					<complexType>
 						<choice minOccurs="0" maxOccurs="unbounded">
 						   
-							<element name="TabletPC" type="tns:TabletPC"
-								 />
+							<element name="TabletPC" type="tns:TabletPC"/>
 
-							<element name="Oven" type="tns:Oven" minOccurs="0"
-								maxOccurs="unbounded" />
+							<element name="Oven" type="tns:Oven"/>
 
-							<element name="Laptop" type="tns:Laptop" minOccurs="0"
-								maxOccurs="unbounded" />
+							<element name="Laptop" type="tns:Laptop"/>
 
-							<element name="Refrigerator" type="tns:Refrigerator"
-								minOccurs="0" maxOccurs="unbounded" />
+							<element name="Refrigerator" type="tns:Refrigerator"/>
 
-							<element name="VacuumCleaner" type="tns:VacuumCleaner"
-								minOccurs="0" maxOccurs="unbounded" />
+							<element name="VacuumCleaner" type="tns:VacuumCleaner"/>
 
-							<element name="Speakers" type="tns:Speakers"
-								minOccurs="0" maxOccurs="unbounded" />
+							<element name="Speakers" type="tns:Speakers"/>
 								
 						</choice>
 					</complexType>
