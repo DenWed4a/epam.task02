@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.epam.by/appliance"
+	xmlns:tns="http://www.epam.by/appliance">
+
+	<element name="appliances">
+		<complexType>
+			<sequence>
+				<element name="appliance">
+					<complexType>
+						<choice minOccurs="0" maxOccurs="unbounded">
+						   
+							<element name="TabletPC" type="tns:TabletPC"
+								 />
+
+							<element name="Oven" type="tns:Oven" minOccurs="0"
+								maxOccurs="unbounded" />
+
+							<element name="Laptop" type="tns:Laptop" minOccurs="0"
+								maxOccurs="unbounded" />
+
+							<element name="Refrigerator" type="tns:Refrigerator"
+								minOccurs="0" maxOccurs="unbounded" />
+
+							<element name="VacuumCleaner" type="tns:VacuumCleaner"
+								minOccurs="0" maxOccurs="unbounded" />
+
+							<element name="Speakers" type="tns:Speakers"
+								minOccurs="0" maxOccurs="unbounded" />
+								
+						</choice>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="TabletPC">
+		<sequence>
+			<element name="BATTERY_CAPACITY" type="int"/>
+			<element name="DISPLAY_INCHES" type="int" />
+			<element name="MEMORY_ROM" type="int" />
+			<element name="FLASH_MEMORY_CAPACITY" type="int" />
+			<element name="COLOR" type="string" />
+		</sequence>
+
+	</complexType>
+
+	<complexType name="Oven">
+		<sequence>
+			<element name="POWER_CONSUMPTION" type="string" />
+			<element name="WEIGHT" type="int" />
+			<element name="CAPACITY" type="int" />
+			<element name="DEPTH" type="int" />
+			<element name="HEIGHT" type="double" />
+			<element name="WIDTH" type="double" />
+		</sequence>
+		
+	</complexType>
+
+	<complexType name="Laptop">
+		<sequence>
+			<element name="BATTERY_CAPACITY" type="double" />
+			<element name="OS" type="string" />
+			<element name="MEMORY_ROM" type="int" />
+			<element name="SYSTEM_MEMORY" type="int" />
+			<element name="CPU" type="double" />
+			<element name="DISPLAY_INCHS" type="double" />
+		</sequence>
+
+	</complexType>
+
+	<complexType name="Refrigerator">
+		<sequence>
+			<element name="POWER_CONSUMPTION" type="int" />
+			<element name="WEIGHT" type="int" />
+			<element name="FREEZER_CAPACITY" type="int" />
+			<element name="OVERALL_CAPACITY" type="double" />
+			<element name="HEIGHT" type="int" />
+			<element name="WIDTH" type="int" />
+		</sequence>
+
+	</complexType>
+
+	<complexType name="VacuumCleaner">
+		<sequence>
+			<element name="POWER_CONSUMPTION" type="int" />
+			<element name="FILTER_TYPE" type="string" />
+			<element name="BAG_TYPE" type="string" />
+			<element name="WAND_TYPE" type="string" />
+			<element name="MOTOR_SPEED_REGULATION" type="int" />
+			<element name="CLEANING_WIDTH" type="int" />
+		</sequence>
+
+	</complexType>
+
+	<complexType name="Speakers">
+		<sequence>
+			<element name="POWER_CONSUMPTION" type="int" />
+			<element name="NUMBER_OF_SPEAKERS" type="int" />
+			<element name="FREQUENCY_RANGE" type="string" />
+			<element name="CORD_LENGTH" type="double" />
+
+		</sequence>
+
+	</complexType>
+
+
+
+
+
+</schema>
